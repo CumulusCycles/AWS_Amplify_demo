@@ -7,7 +7,7 @@ function SiteNav() {
         <header>
             <Navbar bg="dark" expand="lg" variant="dark">
                 <Container>
-                <Navbar.Brand>Contacts App</Navbar.Brand>
+                    <Navbar.Brand><Nav.Link href="/">Contacts App</Nav.Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-md-auto">
