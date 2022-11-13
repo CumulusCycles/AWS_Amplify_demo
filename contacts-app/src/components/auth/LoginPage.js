@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -23,7 +25,15 @@ function LoginPage() {
                             <Form.Control type="password" minLength="8" placeholder="Enter Password" />
                         </Form.Group>
                         
-                        <Button variant="primary" type="submit">Login &gt;&gt;</Button>&nbsp;                        
+                        <Link
+                            to ={{ pathname: '/contacts' }}>
+                            <Button variant="primary" type="button">Login &gt;&gt;</Button>
+                        </Link>
+                        <br />Don't have an account?&nbsp;
+                        <Link
+                            to ={{ pathname: '/register' }}>
+                            Register
+                        </Link> here.         
                     </Form>
                 </Col>
             </Row>
